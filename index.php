@@ -65,6 +65,8 @@ abstract class Car {
   }
 
   $redFerrari = new Ferrari();
+  
+  echo"<br>";
 
 
   //Encapsulation
@@ -88,3 +90,31 @@ class Lioness extends Lion{
     private $sons = 3;
  
 }
+
+
+//Polymorphism 
+
+class Person{
+ 
+ 
+    function saySomething(){
+        echo "hello world";
+    }
+}
+ 
+class Ali extends Person{
+   
+    function saySomething(){
+        echo "hi all";
+    }
+}
+
+
+$ahmad = new Person();  
+$ahmad->saySomething();
+echo"<br>";
+
+$aliSon= new Ali();  
+$aliSon->saySomething();
+
+?>
